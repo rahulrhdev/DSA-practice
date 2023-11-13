@@ -4,6 +4,13 @@ const numbers = [1, 2, 3, 4, 5];
  * map: Transforms array elements with a provided function, creating a new array.
  */
 
+const doubledNumbers = numbers.map((num, index, arr) => {
+    console.log(index)
+    console.log(arr)
+    return num * 2;
+})
+
+console.log(doubledNumbers);
 
 /**
  * filter: Creates a new array with elements that satisfy a specified condition.
